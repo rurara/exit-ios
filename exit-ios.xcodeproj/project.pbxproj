@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		67B0F6C123420172000D0387 /* exit_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0F6C023420172000D0387 /* exit_iosTests.swift */; };
 		67B0F6CC23420172000D0387 /* exit_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0F6CB23420172000D0387 /* exit_iosUITests.swift */; };
 		67B0F6DA23420265000D0387 /* SEMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0F6D923420265000D0387 /* SEMeetingViewController.swift */; };
+		67E4F4D5234483B4004BCC54 /* SEDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E4F4D4234483B4004BCC54 /* SEDateCell.swift */; };
 		945C19BF67DBE8CB474617D6 /* Pods_exit_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B48C69D508609942DC1D949 /* Pods_exit_iosTests.framework */; };
 		ACB65286C27FEF7549C186CF /* Pods_exit_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D5399BDDF3CD3C75ED6D9E /* Pods_exit_iosUITests.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		67B0F6CB23420172000D0387 /* exit_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exit_iosUITests.swift; sourceTree = "<group>"; };
 		67B0F6CD23420172000D0387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67B0F6D923420265000D0387 /* SEMeetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SEMeetingViewController.swift; path = Controller/SEMeetingViewController.swift; sourceTree = "<group>"; };
+		67E4F4D4234483B4004BCC54 /* SEDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEDateCell.swift; sourceTree = "<group>"; };
 		86EC7F644F2068EECECD0C5D /* Pods-exit-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exit-iosTests.release.xcconfig"; path = "Target Support Files/Pods-exit-iosTests/Pods-exit-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		94087F1F77F37409A1D142DE /* Pods_exit_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_exit_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3E4BEA2E72BC6D9ACA02FC /* Pods-exit-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exit-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-exit-iosUITests/Pods-exit-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				67B0F6AD23420171000D0387 /* ViewController.swift */,
 				67B0F6AF23420171000D0387 /* Main.storyboard */,
 				67B0F6B223420172000D0387 /* Assets.xcassets */,
+				67E4F4D923448E05004BCC54 /* View */,
 				67B0F6B423420172000D0387 /* LaunchScreen.storyboard */,
 				67B0F6B723420172000D0387 /* Info.plist */,
 			);
@@ -158,6 +161,14 @@
 			path = "exit-iosUITests";
 			sourceTree = "<group>";
 		};
+		67E4F4D923448E05004BCC54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				67E4F4D4234483B4004BCC54 /* SEDateCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C7625ADCC850DE5F72784242 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +179,6 @@
 				ECF3C455B39B2E76A37CDEE1 /* Pods-exit-iosUITests.debug.xcconfig */,
 				9E3E4BEA2E72BC6D9ACA02FC /* Pods-exit-iosUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -396,6 +406,7 @@
 				67B0F6DA23420265000D0387 /* SEMeetingViewController.swift in Sources */,
 				67B0F6AE23420171000D0387 /* ViewController.swift in Sources */,
 				67B0F6AA23420171000D0387 /* AppDelegate.swift in Sources */,
+				67E4F4D5234483B4004BCC54 /* SEDateCell.swift in Sources */,
 				67B0F6AC23420171000D0387 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
