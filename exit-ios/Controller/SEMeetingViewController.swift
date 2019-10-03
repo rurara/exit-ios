@@ -7,6 +7,9 @@
 //
 
 import UIKit
+#if di
+#else
+#endif
 
 class SEMeetingViewController: UIViewController {
 
