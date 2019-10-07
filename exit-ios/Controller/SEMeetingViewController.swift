@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+
 #if di
 #else
 #endif
@@ -17,12 +19,7 @@ class SEMeetingViewController: UIViewController {
         super.viewDidLoad()
         print("yaho");
         
+        AF.request("http://localhost:3000/api/v1/test", method:.post, parameters: nil).responseJSON{response in print(response)}
     }
     /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
