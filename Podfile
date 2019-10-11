@@ -6,7 +6,6 @@ target 'exit-ios' do
   use_frameworks!
 
   # Pods for exit-ios
-  pod 'JTAppleCalendar'
   pod 'Alamofire', '~> 5.0.0-rc.2'
 
   target 'exit-iosTests' do
