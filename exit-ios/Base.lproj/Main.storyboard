@@ -148,10 +148,10 @@
             </objects>
             <point key="canvasLocation" x="-380" y="209"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Ipx-Cy-hbx">
             <objects>
-                <viewController id="yhj-Uz-dg2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SELoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yhj-Uz-dg2" customClass="SELoginViewController" customModule="exit_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zea-cq-B6u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,6 +202,14 @@
                                     <constraint firstAttribute="height" constant="100" id="fFy-hC-LUZ"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dP-WH-bm8">
+                                <rect key="frame" x="348" y="49" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="closeButtonAction:" destination="yhj-Uz-dg2" eventType="touchUpInside" id="nWU-Gn-MfO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
