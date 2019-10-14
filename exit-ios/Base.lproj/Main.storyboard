@@ -187,14 +187,20 @@
                                 <rect key="frame" x="112" y="371" width="240" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcd-24-8mu">
-                                        <rect key="frame" x="34" y="0.0" width="46" height="88"/>
+                                        <rect key="frame" x="31" y="0.0" width="52" height="88"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="가입하기"/>
+                                        <connections>
+                                            <action selector="userRegisterButtonAction:" destination="yhj-Uz-dg2" eventType="touchUpInside" id="EJ9-bq-cRI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGP-pR-p16">
                                         <rect key="frame" x="146" y="0.0" width="46" height="88"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="로그인"/>
+                                        <connections>
+                                            <action selector="loginButtonAction:" destination="yhj-Uz-dg2" eventType="touchUpInside" id="NRB-jT-7ox"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -222,6 +228,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Pp-kb-IbI"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="5ZW-4U-vwX" id="cXk-dO-7HP"/>
+                        <outlet property="passwordTextField" destination="NCG-0D-t0L" id="AdI-e3-LeM"/>
+                        <outlet property="userNameTextField" destination="Qvo-dN-kr8" id="oOE-NX-Qin"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwD-PZ-Kd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
