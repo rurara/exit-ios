@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SELoginViewController: UIViewController {
 
@@ -21,8 +22,16 @@ class SELoginViewController: UIViewController {
     
     @IBAction func loginButtonAction(_ sender: Any) {
         print("login", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
+        
+        AF.request("http://localhost:3000/api/v1/login",
+                   method:.post,
+                   parameters:[
+                    "email": self.emailTextField.text!,
+                    "password": self.passwordTextField.text!,
+        ]).responseJSON{response in
+            print(response)
+        }
     }
-    
     
     @IBAction func closeButtonAction(_ sender: Any) {
         self.dismiss(animated: true) {
