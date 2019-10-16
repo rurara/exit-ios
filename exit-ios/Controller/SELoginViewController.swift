@@ -18,6 +18,16 @@ class SELoginViewController: UIViewController {
     @IBAction func userRegisterButtonAction(_ sender: Any) {
         
         print("register", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
+        
+        AF.request("http://localhost:3000/api/v1/users",
+                   method:.post,
+                   parameters:[
+                    "email"     : self.emailTextField.text!,
+                    "password"  : self.passwordTextField.text!,
+                    "userName"  : self.userNameTextField.text!
+        ]).responseJSON{response in
+            print(response)
+        }
     }
     
     @IBAction func loginButtonAction(_ sender: Any) {
@@ -26,8 +36,8 @@ class SELoginViewController: UIViewController {
         AF.request("http://localhost:3000/api/v1/login",
                    method:.post,
                    parameters:[
-                    "email": self.emailTextField.text!,
-                    "password": self.passwordTextField.text!,
+                    "email"     : self.emailTextField.text!,
+                    "password"  : self.passwordTextField.text!,
         ]).responseJSON{response in
             print(response)
         }
@@ -39,10 +49,14 @@ class SELoginViewController: UIViewController {
         }
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("login view")
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print(touches)
+//        regiButtonAction(nil);
+//        userRegisterButtonAction([]);
     }
 }
