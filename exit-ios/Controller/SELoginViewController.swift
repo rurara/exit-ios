@@ -56,6 +56,9 @@ class SELoginViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print(touches)
+        self.view.endEditing(true);
+        closeButtonAction([]);
+        
 //        regiButtonAction(nil);
 //        userRegisterButtonAction([]);
     }
