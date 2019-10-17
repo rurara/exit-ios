@@ -39,6 +39,7 @@ class SELoginViewController: UIViewController {
                     "email"     : self.emailTextField.text!,
                     "password"  : self.passwordTextField.text!,
         ]).responseJSON{response in
+            print(response.response!.allHeaderFields["x-access-token"] ?? "로그인 토큰 없음");
             print(response)
         }
     }
