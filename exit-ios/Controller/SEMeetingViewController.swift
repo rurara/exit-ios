@@ -17,11 +17,13 @@ import JTAppleCalendar
 
 class SEMeetingViewController: UIViewController {
     
+    let host:String = "http://lotco.de:3000/api/v1/"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("yaho");
         
-        AF.request("http://localhost:3000/api/v1/test", method:.post, parameters: nil).responseJSON{response in print(response)}
+        AF.request(host+"test", method:.post, parameters: nil).responseJSON{response in print(response)}
     }
 }
 

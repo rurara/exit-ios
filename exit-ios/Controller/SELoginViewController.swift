@@ -11,6 +11,9 @@ import Alamofire
 
 class SELoginViewController: UIViewController {
 
+    
+    let host:String = "http://lotco.de:3000/api/v1/"
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var userNameTextField: UITextField!
@@ -19,7 +22,7 @@ class SELoginViewController: UIViewController {
         
         print("register", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
         
-        AF.request("http://localhost:3000/api/v1/users",
+        AF.request(host+"users",
                    method:.post,
                    parameters:[
                     "email"     : self.emailTextField.text!,
@@ -33,7 +36,7 @@ class SELoginViewController: UIViewController {
     @IBAction func loginButtonAction(_ sender: Any) {
         print("login", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
         
-        AF.request("http://localhost:3000/api/v1/login",
+        AF.request(host+"login",
                    method:.post,
                    parameters:[
                     "email"     : self.emailTextField.text!,
