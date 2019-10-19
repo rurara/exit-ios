@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2AF0445355240BCBAD210047 /* Pods_exit_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94087F1F77F37409A1D142DE /* Pods_exit_ios.framework */; };
+		670D0FD2235B36D3000067B4 /* SEAPIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670D0FD1235B36D3000067B4 /* SEAPIController.swift */; };
 		67B0F6AA23420171000D0387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0F6A923420171000D0387 /* AppDelegate.swift */; };
 		67B0F6AC23420171000D0387 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0F6AB23420171000D0387 /* SceneDelegate.swift */; };
 		67B0F6AE23420171000D0387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0F6AD23420171000D0387 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		4B48C69D508609942DC1D949 /* Pods_exit_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_exit_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		670D0FD1235B36D3000067B4 /* SEAPIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEAPIController.swift; sourceTree = "<group>"; };
 		67B0F6A623420170000D0387 /* exit-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "exit-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B0F6A923420171000D0387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67B0F6AB23420171000D0387 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			children = (
 				67E4F4E223533C36004BCC54 /* SEMeetingViewController.swift */,
 				67E4F4E023533AE6004BCC54 /* SELoginViewController.swift */,
+				670D0FD1235B36D3000067B4 /* SEAPIController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 			files = (
 				67B0F6AE23420171000D0387 /* ViewController.swift in Sources */,
 				67B0F6AA23420171000D0387 /* AppDelegate.swift in Sources */,
+				670D0FD2235B36D3000067B4 /* SEAPIController.swift in Sources */,
 				67E4F4E123533AE6004BCC54 /* SELoginViewController.swift in Sources */,
 				67B0F6AC23420171000D0387 /* SceneDelegate.swift in Sources */,
 				67E4F4E323533C36004BCC54 /* SEMeetingViewController.swift in Sources */,

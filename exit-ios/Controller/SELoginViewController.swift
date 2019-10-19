@@ -7,12 +7,8 @@
 //
 
 import UIKit
-import Alamofire
 
 class SELoginViewController: UIViewController {
-
-    
-    let host:String = "http://lotco.de:3000/api/v1/"
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -22,29 +18,13 @@ class SELoginViewController: UIViewController {
         
         print("register", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
         
-        AF.request(host+"users",
-                   method:.post,
-                   parameters:[
-                    "email"     : self.emailTextField.text!,
-                    "password"  : self.passwordTextField.text!,
-                    "userName"  : self.userNameTextField.text!
-        ]).responseJSON{response in
-            print(response)
-        }
+        
     }
     
     @IBAction func loginButtonAction(_ sender: Any) {
         print("login", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
         
-        AF.request(host+"login",
-                   method:.post,
-                   parameters:[
-                    "email"     : self.emailTextField.text!,
-                    "password"  : self.passwordTextField.text!,
-        ]).responseJSON{response in
-            print(response.response!.allHeaderFields["x-access-token"] ?? "로그인 토큰 없음");
-            print(response)
-        }
+        SEAPIController.shared.login(email: self.emailTextField.text!, password: self.userNameTextField.text!);
     }
     
     @IBAction func closeButtonAction(_ sender: Any) {
