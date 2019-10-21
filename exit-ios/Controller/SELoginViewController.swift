@@ -24,7 +24,9 @@ class SELoginViewController: UIViewController {
     @IBAction func loginButtonAction(_ sender: Any) {
         print("login", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
         
-        SEAPIController.shared.login(email: self.emailTextField.text!, password: self.userNameTextField.text!);
+        
+        SEAPIController.shared.login(email: "21", password: "asd")
+//        SEAPIController.shared.login(email: self.emailTextField.text!, password: self.userNameTextField.text!)
     }
     
     @IBAction func closeButtonAction(_ sender: Any) {
