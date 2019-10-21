@@ -17,7 +17,7 @@ class SEAPIController: NSObject {
     //    let host:String = "http://lotco.de:3000/api/v1/"
     let host:String = "http://localhost:3000/api/v1/"
 
-    func login(email:String!, password:String!) -> String{
+    func login(email:String!, password:String!,  completeHandler:@escaping ()->Void){
         AF.request(host+"login",
                    method:.post,
                    parameters:[
@@ -26,8 +26,10 @@ class SEAPIController: NSObject {
         ]).responseJSON{response in
             print(response.response!.allHeaderFields["x-access-token"] ?? "로그인 토큰 없음");
             print(response)
+            completeHandler()
         }
-        return "야호"
+//        completeHandler()
+//        return "야호"
     }
     
 //    AF.request(host+"users",

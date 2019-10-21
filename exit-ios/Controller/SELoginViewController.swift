@@ -25,7 +25,9 @@ class SELoginViewController: UIViewController {
         print("login", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
         
         
-        SEAPIController.shared.login(email: "21", password: "asd")
+        SEAPIController.shared.login(email: "21", password: "asd", completeHandler: {
+            print("complete!!!")
+        })
 //        SEAPIController.shared.login(email: self.emailTextField.text!, password: self.userNameTextField.text!)
     }
     
