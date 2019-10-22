@@ -28,6 +28,9 @@ class SEAPIController: NSObject {
             print(response)
             completeHandler()
         }
+        func done(){
+            print("1")
+        }
 //        completeHandler()
 //        return "야호"
     }
