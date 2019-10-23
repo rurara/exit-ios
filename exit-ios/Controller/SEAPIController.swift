@@ -31,19 +31,23 @@ class SEAPIController: NSObject {
         func done(){
             print("1")
         }
-//        completeHandler()
-//        return "야호"
     }
-    
-//    AF.request(host+"users",
-//               method:.post,
-//               parameters:[
-//                "email"     : self.emailTextField.text!,
-//                "password"  : self.passwordTextField.text!,
-//                "userName"  : self.userNameTextField.text!
-//    ]).responseJSON{response in
-//        print(response)
-//    }
+
+    func userRegister(email:String!,
+                      password:String!,
+                      userName:String!,
+                      completeHandler:@escaping ()->Void){
+            
+        AF.request(host+"users",
+                   method:.post,
+                   parameters:[
+                    "email"     : email,
+                    "password"  : password,
+                    "userName"  : userName
+        ]).responseJSON{response in
+            completeHandler();
+        }
+    }
     
     @discardableResult
     func printMessage(message: String) -> String {

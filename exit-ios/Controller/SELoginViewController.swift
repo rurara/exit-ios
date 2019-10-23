@@ -18,17 +18,23 @@ class SELoginViewController: UIViewController {
         
         print("register", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
         
-        
+        SEAPIController.shared.userRegister(email: self.emailTextField.text!,
+                                            password: self.passwordTextField.text!,
+                                            userName: userNameTextField.text!,
+                                            completeHandler: {
+                                                print("회원 가입 완료");
+        })
     }
     
     @IBAction func loginButtonAction(_ sender: Any) {
         print("login", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
         
         
-        SEAPIController.shared.login(email: "21", password: "asd", completeHandler: {
+        SEAPIController.shared.login(email:self.emailTextField.text!,
+                                  password: self.passwordTextField.text!,
+                           completeHandler:{
             print("complete!!!")
         })
-//        SEAPIController.shared.login(email: self.emailTextField.text!, password: self.userNameTextField.text!)
     }
     
     @IBAction func closeButtonAction(_ sender: Any) {
