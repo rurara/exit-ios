@@ -33,7 +33,10 @@ class SELoginViewController: UIViewController {
         SEAPIController.shared.login(email:self.emailTextField.text!,
                                   password: self.passwordTextField.text!,
                            completeHandler:{response in
-            print("complete!!!" , response)
+                            print("complete!!!" , response)
+                            self.dismiss(animated: true) {
+                                print("dismiss login view")
+                            }
         })
     }
     
