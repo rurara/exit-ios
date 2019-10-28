@@ -19,6 +19,7 @@
 		67B0F6CC23420172000D0387 /* exit_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B0F6CB23420172000D0387 /* exit_iosUITests.swift */; };
 		67E4F4E123533AE6004BCC54 /* SELoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E4F4E023533AE6004BCC54 /* SELoginViewController.swift */; };
 		67E4F4E323533C36004BCC54 /* SEMeetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E4F4E223533C36004BCC54 /* SEMeetingViewController.swift */; };
+		67FF5C2A2366EC6300E3C7CE /* SEUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FF5C292366EC6300E3C7CE /* SEUser.swift */; };
 		945C19BF67DBE8CB474617D6 /* Pods_exit_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B48C69D508609942DC1D949 /* Pods_exit_iosTests.framework */; };
 		ACB65286C27FEF7549C186CF /* Pods_exit_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D5399BDDF3CD3C75ED6D9E /* Pods_exit_iosUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		67B0F6CD23420172000D0387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67E4F4E023533AE6004BCC54 /* SELoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SELoginViewController.swift; sourceTree = "<group>"; };
 		67E4F4E223533C36004BCC54 /* SEMeetingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SEMeetingViewController.swift; sourceTree = "<group>"; };
+		67FF5C292366EC6300E3C7CE /* SEUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SEUser.swift; sourceTree = "<group>"; };
 		86EC7F644F2068EECECD0C5D /* Pods-exit-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exit-iosTests.release.xcconfig"; path = "Target Support Files/Pods-exit-iosTests/Pods-exit-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		94087F1F77F37409A1D142DE /* Pods_exit_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_exit_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E3E4BEA2E72BC6D9ACA02FC /* Pods-exit-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-exit-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-exit-iosUITests/Pods-exit-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		67B0F6A823420170000D0387 /* exit-ios */ = {
 			isa = PBXGroup;
 			children = (
+				67FF5C282366EC4800E3C7CE /* Model */,
 				67E4F4D923448E05004BCC54 /* View */,
 				67E4F4DF23533AB0004BCC54 /* Controller */,
 				67B0F6A923420171000D0387 /* AppDelegate.swift */,
@@ -178,6 +181,14 @@
 				670D0FD1235B36D3000067B4 /* SEAPIController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		67FF5C282366EC4800E3C7CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67FF5C292366EC6300E3C7CE /* SEUser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C7625ADCC850DE5F72784242 /* Pods */ = {
@@ -416,6 +427,7 @@
 			files = (
 				67B0F6AE23420171000D0387 /* ViewController.swift in Sources */,
 				67B0F6AA23420171000D0387 /* AppDelegate.swift in Sources */,
+				67FF5C2A2366EC6300E3C7CE /* SEUser.swift in Sources */,
 				670D0FD2235B36D3000067B4 /* SEAPIController.swift in Sources */,
 				67E4F4E123533AE6004BCC54 /* SELoginViewController.swift in Sources */,
 				67B0F6AC23420171000D0387 /* SceneDelegate.swift in Sources */,
