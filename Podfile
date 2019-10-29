@@ -7,6 +7,8 @@ target 'exit-ios' do
 
   # Pods for exit-ios
   pod 'Alamofire', '~> 5.0.0-rc.2'
+  pod 'JWTDecode', '~> 2.3'
+
 
   target 'exit-iosTests' do
     inherit! :search_paths

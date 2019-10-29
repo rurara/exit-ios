@@ -9,9 +9,9 @@
 import UIKit
 
 class SEUser: NSObject {
-    var userToken:String!;
-    var userName:String!;
-    var userPoint:NSNumber!;
+    public var userToken:String!;
+    public var userName:String!;
+    public var userPoint:NSNumber!;
     
     override init() {
         print("user init!");
