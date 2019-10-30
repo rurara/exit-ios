@@ -35,10 +35,11 @@ class SELoginViewController: UIViewController {
         SEAPIController.shared.login(email:self.emailTextField.text!,
                                   password: self.passwordTextField.text!,
                            completeHandler:{response in
+                            user.userName = response.response!.allHeaderFields["x-access-token"] as! String
                             
-//                            print(response.response!.allHeaderFields["x-access-token"] ?? "로그인 토큰 없음");
-//                            user.userName = response[
                             print("complete!!!" , response)
+                            print("user token!!!" , user)
+                            
                             self.dismiss(animated: true) {
                                 print("dismiss login view")
                             }

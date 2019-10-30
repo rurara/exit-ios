@@ -16,4 +16,20 @@ class SEUser: NSObject {
     override init() {
         print("user init!");
     }
+    
+    override var description: String{
+        var message:String = String();
+        
+        if ((userToken) != nil){
+            message = message + "//user token = " + userToken;
+        }
+        if ((userName) != nil){
+            message = message + "//user name = " + userName;
+        }
+        if ((userPoint) != nil){
+            message = message + "//user point = " + userPoint.stringValue;
+        }
+        
+        return message;
+    }
 }
