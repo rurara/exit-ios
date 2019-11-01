@@ -30,12 +30,12 @@ class SELoginViewController: UIViewController {
         print("login", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
         
         
-        var user:SEUser = SEUser();
+        let user:SEUser = SEUser();
         
         SEAPIController.shared.login(email:self.emailTextField.text!,
                                   password: self.passwordTextField.text!,
                            completeHandler:{response in
-                            user.userName = response.response!.allHeaderFields["x-access-token"] as! String
+                            user.userName = response.response!.allHeaderFields["x-access-token"] as? String
                             
                             print("complete!!!" , response)
                             print("user token!!!" , user)
