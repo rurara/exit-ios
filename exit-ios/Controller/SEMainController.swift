@@ -12,6 +12,6 @@ class SEMainController: NSObject {
     var me:SEUser;
     
     override init() {
-        
+        me = SEUser();
     }
 }
