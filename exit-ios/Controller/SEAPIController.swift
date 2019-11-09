@@ -25,11 +25,7 @@ class SEAPIController: NSObject {
                     "password"  : password,
         ]).responseJSON{response in
             print(response.response!.allHeaderFields["x-access-token"] ?? "로그인 토큰 없음");
-//            print(response)
             completeHandler(response)
-        }
-        func done(){
-            print("1")
         }
     }
 
@@ -56,10 +52,4 @@ class SEAPIController: NSObject {
        
         return outputMessage
     }
-    
-    
-    
-    
-    
-    
 }
