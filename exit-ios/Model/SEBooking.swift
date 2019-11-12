@@ -11,7 +11,9 @@ import UIKit
 class SEBooking: NSObject {
     public var bookingDate:Data!;
     public var people:NSNumber!;
-
+    public var registerUser:Any?;
+    
+    
     override init() {
         
     }
