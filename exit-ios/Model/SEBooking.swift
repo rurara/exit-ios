@@ -13,7 +13,6 @@ class SEBooking: NSObject {
     public var people:NSNumber!;
     public var registerUser:Any?;
     
-    
     override init() {
         
     }

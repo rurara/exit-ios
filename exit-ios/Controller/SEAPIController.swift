@@ -45,6 +45,15 @@ class SEAPIController: NSObject {
         }
     }
     
+    func loadBookingList(completeHandler:@escaping() -> Void) {
+        AF.request(host+"booking",
+                   method:.get,
+                   parameters:nil)
+        .responseJSON{response in
+            completeHandler();
+        }
+    }
+    
     @discardableResult
     func printMessage(message: String) -> String {
         let outputMessage = "Output : \(message)"
