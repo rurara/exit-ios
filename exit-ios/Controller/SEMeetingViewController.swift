@@ -24,6 +24,11 @@ class SEMeetingViewController: UIViewController {
         print("yaho");
         
         AF.request(host+"test", method:.post, parameters: nil).responseJSON{response in print(response)}
+        
+        SEAPIController.shared.loadBookingList { (response) in
+            print(response)
+        }
+        
     }
 }
 

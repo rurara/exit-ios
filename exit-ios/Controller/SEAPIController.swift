@@ -45,12 +45,12 @@ class SEAPIController: NSObject {
         }
     }
     
-    func loadBookingList(completeHandler:@escaping() -> Void) {
+    func loadBookingList(completeHandler:@escaping(AFDataResponse<Any>) -> Void) {
         AF.request(host+"booking",
                    method:.get,
                    parameters:nil)
         .responseJSON{response in
-            completeHandler();
+            completeHandler(response)
         }
     }
     
