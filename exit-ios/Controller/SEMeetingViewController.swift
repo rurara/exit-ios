@@ -15,6 +15,8 @@ import JTAppleCalendar
 #else
 #endif
 
+var bookings:Array<Any>?;
+
 class SEMeetingViewController: UIViewController {
     
     let host:String = "http://lotco.de:3000/api/v1/"
@@ -27,8 +29,8 @@ class SEMeetingViewController: UIViewController {
         
         SEAPIController.shared.loadBookingList { (response) in
             print(response)
+            bookings = response["meetings"];
         }
-        
     }
 }
 
