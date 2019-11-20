@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class SELoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var userNameTextField: UITextField!
+    
+    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var closeButton: UIButton!
+    
+    
+    let disposeBag = DisposeBag()
+
     
     @IBAction func userRegisterButtonAction(_ sender: Any) {
         
@@ -54,6 +64,11 @@ class SELoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("login view")
+        
+        loginButton.rx.tap.bind {_ in 
+            print("touch!");
+        }.disposed(by: disposeBag)
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

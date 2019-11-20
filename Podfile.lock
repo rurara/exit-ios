@@ -1,20 +1,34 @@
 PODS:
   - Alamofire (5.0.0-rc.2)
-  - JTAppleCalendar (8.0.2)
+  - JWTDecode (2.3.1)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.2)
-  - JTAppleCalendar
+  - JWTDecode (~> 2.3)
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
 
 SPEC REPOS:
   trunk:
     - Alamofire
-    - JTAppleCalendar
+    - JWTDecode
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
-  JTAppleCalendar: bb3dd3752e2bcc85cb798ab763fbdd6e142715fc
+  JWTDecode: 222f79e3df85a3b02028822fca950058961460e6
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
 
-PODFILE CHECKSUM: 4596e7a7d70a6e6bfcbad31f3db5665b1453f8de
+PODFILE CHECKSUM: 9ea341c07b4ff1a673636eddf0b9ea27f528a2f7
 
 COCOAPODS: 1.8.1

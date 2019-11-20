@@ -8,8 +8,6 @@
 
 import UIKit
 import Alamofire
-import JTAppleCalendar
-
 
 #if di
 #else
@@ -29,11 +27,10 @@ class SEMeetingViewController: UIViewController {
         
         SEAPIController.shared.loadBookingList { (response) in
             print(response)
-            bookings = response["meetings"];
+//            bookings = response["meetings"] as? [String: Any];
         }
     }
 }
-
 
 extension SEMeetingViewController: UITableViewDelegate, UITableViewDataSource{
     

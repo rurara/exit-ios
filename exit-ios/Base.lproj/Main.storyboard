@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hqv-6O-F0S">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -112,7 +113,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="ClR-zg-4wz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HU1-Np-1hJ" secondAttribute="leading" constant="20" symbolic="YES" id="2T8-Ei-8gY"/>
                                             <constraint firstItem="ClR-zg-4wz" firstAttribute="top" secondItem="HU1-Np-1hJ" secondAttribute="top" constant="18" id="QEl-ls-lxQ"/>
@@ -122,7 +123,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2M-3t-xkr">
                                         <rect key="frame" x="0.0" y="257" width="414" height="512"/>
-                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -178,7 +179,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="JrE-zh-019"/>
                                 </constraints>
@@ -203,7 +204,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="fFy-hC-LUZ"/>
                                 </constraints>
@@ -229,8 +230,11 @@
                         <viewLayoutGuide key="safeArea" id="4Pp-kb-IbI"/>
                     </view>
                     <connections>
+                        <outlet property="closeButton" destination="6dP-WH-bm8" id="HaX-fN-7ru"/>
                         <outlet property="emailTextField" destination="5ZW-4U-vwX" id="cXk-dO-7HP"/>
+                        <outlet property="loginButton" destination="oGP-pR-p16" id="Ycd-uc-f04"/>
                         <outlet property="passwordTextField" destination="NCG-0D-t0L" id="AdI-e3-LeM"/>
+                        <outlet property="registerButton" destination="rcd-24-8mu" id="zoo-jO-Mb8"/>
                         <outlet property="userNameTextField" destination="Qvo-dN-kr8" id="oOE-NX-Qin"/>
                     </connections>
                 </viewController>
