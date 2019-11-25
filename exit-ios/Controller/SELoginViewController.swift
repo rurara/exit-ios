@@ -39,20 +39,7 @@ class SELoginViewController: UIViewController {
     @IBAction func loginButtonAction(_ sender: Any) {
         print("login", self.emailTextField.text! , self.passwordTextField.text!, self.userNameTextField.text!);
                 
-        let user:SEUser = SEUser();
         
-        SEAPIController.shared.login(email:self.emailTextField.text!,
-                                  password: self.passwordTextField.text!,
-                           completeHandler:{response in
-                            user.userName = response.response!.allHeaderFields["x-access-token"] as? String
-                            
-                            print("complete!!!" , response)
-                            print("user token!!!" , user)
-                            
-                            self.dismiss(animated: true) {
-                                print("dismiss login view")
-                            }
-        })
     }
     
     @IBAction func closeButtonAction(_ sender: Any) {
@@ -66,7 +53,21 @@ class SELoginViewController: UIViewController {
         print("login view")
         
         loginButton.rx.tap.bind {_ in 
-            print("touch!");
+            print("rx touch!");
+            let user:SEUser = SEUser();
+            
+            SEAPIController.shared.login(email:self.emailTextField.text!,
+                                      password: self.passwordTextField.text!,
+                               completeHandler:{response in
+                                user.userName = response.response!.allHeaderFields["x-access-token"] as? String
+                                
+                                print("complete!!!" , response)
+                                print("user token!!!" , user)
+                                
+                                self.dismiss(animated: true) {
+                                    print("dismiss login view")
+                                }
+            })
         }.disposed(by: disposeBag)
         
     }
